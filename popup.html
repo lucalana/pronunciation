@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Form</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>PRONUNCIATION</h2>
+
+    <div class="form-group">
+        <label for="lang">Language</label>
+        <select id="lang" name="lang"></select>
+    </div>
+    <div class="form-group">
+        <label for="input">Sentence/Word</label>
+        <input type="text" id="input" name="input" placeholder="Type something..." autocomplete="off">
+    </div>
+    <button type="submit" id="speak">SPEAK</button>
+  
+    <script src="popup.js"></script>
+  </div>
+</body>
+</html>

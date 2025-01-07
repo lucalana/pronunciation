@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Pronunciation",
+    "version": "1.0.0",
+    "description": "A extension to help people learn language",
+    "permissions": [
+        "tts",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Click to open!",
+        "default_icon": {              
+            "128": "images/128.png",   
+            "48": "images/48.png",    
+            "32": "images/32.png",    
+            "24": "images/24.png",   
+            "16": "images/16.png"   
+        }
+    }
+}
