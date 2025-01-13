@@ -11,14 +11,19 @@ chrome.runtime.onInstalled.addListener(async function () {
   });
 
   chrome.contextMenus.create({
-    title: 'Ler',
+    title: 'Read',
     contexts: ['selection'],
-    id: 'ler'
+    id: 'read'
   })
 });
 
-chrome.contextMenus.onClicked.addListener(function (info,tab) {
-  if(info.menuItemId == 'ler' && info.selectionText) {
-
+chrome.contextMenus.onClicked.addListener(async function (info,tab) {
+  if(info.menuItemId == 'read' && info.selectionText) {
+    let storageConfigs = await chrome.storage.local.get(['voice', 'lang', 'speed']);
+    chrome.tts.speak(info.selectionText, {
+      'lang': storageConfigs.lang,
+      'voiceName': storageConfigs.voice,
+      'rate': Number(storageConfigs.speed)
+    })
   }
 })
