@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Pronúncia",
+    "name": "Pronunciation",
     "version": "1.0.0",
-    "description": "Uma extensão para ajudar as pessoas durante o aprendizado de uma língua.",
+    "description": "An extension is designed to simplify the process of learning a new language",
     "permissions": [
         "tts",
         "storage",
@@ -13,6 +13,6 @@
     },
     "action": {
         "default_popup": "popup.html",
-        "default_title": "Clique para abrir as configurações."
+        "default_title": "Click to open the settings."
     }
 }
